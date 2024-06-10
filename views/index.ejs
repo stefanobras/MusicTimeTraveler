@@ -17,7 +17,11 @@
         <div id="loadingScreen" class="hidden">
             <img src="/loading.png" alt="Loading" class="loading-image">
         </div>
-    </body>
 
-    <script src="/start.js"></script>
+        <script>
+            var userId = '<%= userId ? userId : "" %>'; // Ensure variables are only declared here
+            var accessToken = '<%= accessToken ? accessToken : "" %>';
+        </script>
+        <script src="/start.js"></script>
+    </body>
 </html>
